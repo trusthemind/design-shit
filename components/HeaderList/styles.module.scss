@@ -1,0 +1,11 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    .textItem{
+        font-size: 118px;
+    }
+}
