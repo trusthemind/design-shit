@@ -1,0 +1,33 @@
+.bannerBlock {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 8rem;
+    position: absolute;
+    top: 20rem;
+    left: 20%;
+
+
+    .bannerButtonBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+
+        .bannerTextBlock {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            color: white;
+
+            :nth-child(1) {
+                font-weight: bolder;
+                font-size: 54px;
+            }
+
+            :last-child {
+                font-weight: normal;
+                font-size: 42px;
+            }
+        }
+    }
+}

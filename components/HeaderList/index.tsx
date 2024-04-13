@@ -8,7 +8,7 @@ interface HeaderListItem {
   link: string;
 }
 const HeaderListArr: HeaderListItem[] = [
-  { name: "Solution", link: "/" },
+  { name: "Solutions", link: "/" },
   { name: "Products", link: "/" },
   { name: "Portfolio", link: "/" },
   { name: "Contact", link: "/" },
@@ -18,8 +18,10 @@ export const HeaderList = () => {
   return (
     <ul className={s.list}>
       {HeaderListArr.map((item: HeaderListItem, index: number) => (
-        <li className={s.textItem} key={index}>
-          <Link href={item.link}>{item.name}</Link>
+        <li key={index}>
+          <Link className={s.textItem} href={item.link}>
+            {item.name}
+          </Link>
         </li>
       ))}
     </ul>

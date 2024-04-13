@@ -1,11 +1,14 @@
 .list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.75rem;
+  align-items: center;
 
-    .textItem{
-        font-size: 118px;
-    }
+  .textItem {
+    font-family: var(--montserrat);
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+  }
 }
