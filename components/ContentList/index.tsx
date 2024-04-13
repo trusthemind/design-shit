@@ -52,7 +52,10 @@ export const ContentList = () => {
         <Card
           key={index}
           onClick={() => setSelected(index)}
-          style={{ border: selected === index ? "1px solid var(--green)" : "none" }}
+          styles={{ body: { marginBottom: 0 } }}
+          style={{
+            border: selected === index ? "1px solid var(--green)" : "none",
+          }}
         >
           <Image src={item.img} alt={item.topText} />
           <h3 style={{ textAlign: "center" }}>{item.topText}</h3>

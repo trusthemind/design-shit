@@ -18,14 +18,16 @@ export const ShowItem: FC<ShowItemProps> = ({ img, title, introText, mainText })
           flexDirection: "column",
           alignItems: "center",
           width: "100%",
+          gap: "1.5rem",
           marginTop: "0",
+          borderBottom: "1 px solid #bfc0c0",
         },
       }}
     >
       {img && <Image alt="item image" src={img} />}
-      <h3>{title}</h3>
-      <p>{introText}</p>
-      <p>{mainText}</p>
+      <h3 style={{ alignSelf: "start", fontSize: 32, fontWeight: "300" }}>{title}</h3>
+      <p style={{ lineHeight: "170%" }}>{introText}</p>
+      <p style={{ lineHeight: "170%" }}>{mainText}</p>
     </Card>
   );
 };

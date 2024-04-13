@@ -7,13 +7,15 @@ import { Banner } from "../components/Banner";
 import { ContentList } from "../components/ContentList";
 import { ShowItem } from "../components/ShowItem";
 import ipad from "../public/images/ipad.svg";
+import { FAQList } from "../components/FAQList";
+import { Forms } from "../components/Forms";
 
 const Home = () => {
   return (
     <main>
       <Image alt="background" src={bg} className={s.backgroundHolder} />
       <div className={s.stickyBlock}>
-        <Image alt="logo" src={logo} />
+        <Image alt="logo" src={logo} quality={100} />
         <HeaderList />
       </div>
       <Banner buttonText="Try Demo" introducingText="Introducing" helperText="Something hot....." />
@@ -34,6 +36,8 @@ const Home = () => {
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
              with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`}
         />
+        <FAQList />
+        <Forms/>
       </div>
     </main>
   );
