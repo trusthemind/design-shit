@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "../components/ThemeProvider";
 import "./globals.scss";
+import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Design App",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body>{children}</body>
+        <body>
+          {children}
+          <Footer />
+        </body>
       </ThemeProvider>
     </html>
   );
